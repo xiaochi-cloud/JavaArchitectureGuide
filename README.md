@@ -30,15 +30,37 @@
 ## 内容概览
 
 - [文章](articles/)
-- [教程](tutorials/)
-- [代码示例](examples/)
+    - [设计模式](articles/design_patterns/)
+        - [设计模式-享元模式.md](articles/design_patterns/设计模式-享元模式.md)
+        - [设计模式-代理模式.md](articles/design_patterns/设计模式-代理模式.md)
+        - [设计模式-单例模式.md](articles/design_patterns/设计模式-单例模式.md)
+        - [设计模式-原型模式.md](articles/design_patterns/设计模式-原型模式.md)
+        - [设计模式-命令模式.md](articles/design_patterns/设计模式-命令模式.md)
+        - [设计模式-委派模式.md](articles/design_patterns/设计模式-委派模式.md)
+        - [设计模式-工厂模式.md](articles/design_patterns/设计模式-工厂模式.md)
+        - [设计模式-桥接模式.md](articles/design_patterns/设计模式-桥接模式.md)
+        - [设计模式-模板模式.md](articles/design_patterns/设计模式-模板模式.md)
+        - [设计模式-状态模式.md](articles/design_patterns/设计模式-状态模式.md)
+        - [设计模式-策略模式.md](articles/design_patterns/设计模式-策略模式.md)
+        - [设计模式-组合模式.md](articles/design_patterns/设计模式-组合模式.md)
+        - [设计模式-门面模式.md](articles/design_patterns/设计模式-门面模式.md)
+        - [设计模式-中介者模式.md](articles/design_patterns/设计模式-中介者模式.md)
+        - [设计模式-建造者模式.md](articles/design_patterns/设计模式-建造者模式.md)
+        - [设计模式-装饰器模式.md](articles/design_patterns/设计模式-装饰器模式.md)
+        - [设计模式-观察者模式.md](articles/design_patterns/设计模式-观察者模式.md)
+        - [设计模式-访问者模式.md](articles/design_patterns/设计模式-访问者模式.md)
+        - [设计模式-责任链模式.md](articles/design_patterns/设计模式-责任链模式.md)
+        - [设计模式-迭代器模式.md](articles/design_patterns/设计模式-迭代器模式.md)
+        - [设计模式-适配器模式.md](articles/design_patterns/设计模式-适配器模式.md)
+    - [整体对比.md](articles/整体对比.md)
+    - [七大软件设计原则.md](articles/七大软件设计原则.md)
 
 ## 贡献
 
 我们鼓励对这个仓库进行贡献！如果您有任何与 Java 架构相关的见解、教程、代码示例或资源，欢迎提交拉取请求。您的贡献将有助于改进这个指南，使其对其他人更有价值。
 
-有关如何贡献的更多信息，请参阅 [CONTRIBUTING.md](CONTRIBUTING.md) 文件。
+有关如何贡献的更多信息，请参阅 CONTRIBUTING.md 文件。
 
 ## 许可证
 
-本仓库基于 [MIT 许可证](LICENSE) 进行许可。
+本仓库基于 MIT 许可证 进行许可。
