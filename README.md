@@ -4,13 +4,11 @@
 
 ## 内容目录
 
-- [关于](#关于)
-- [入门指南](#入门指南)
-- [设计模式文档](#设计模式文档)
-- [Redis 文档](#Redis-文档)
-- [MySQL 文档](#MySQL-文档)
-- [贡献](#贡献)
-- [许可证](#许可证)
+- [设计模式文档](articles/design_patterns/)
+- [Redis 文档](articles/redis/)
+- [MySQL 文档](articles/mysql/)
+  [贡献](CONTRIBUTING.md)
+- [许可证](LICENSE)
 
 ## 关于 ℹ️
 
