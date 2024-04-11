@@ -28,33 +28,8 @@
 如果您觉得这个仓库有帮助，请给它点个星星，并且不要忘记通过添加自己的见解或建议改进来做出贡献。
 
 ## 内容概览
-- 设计模式： 可以直接阅读[设计模式文档](https://xiaochi-cloud.gitbook.io/design_pattern) 关于设计模式的详细解释和示例。
-
-- [文章](articles/)
-    - [设计模式](articles/design_patterns/)
-        - [设计模式-享元模式.md](articles/design_patterns/设计模式-享元模式.md)
-        - [设计模式-代理模式.md](articles/design_patterns/设计模式-代理模式.md)
-        - [设计模式-单例模式.md](articles/design_patterns/设计模式-单例模式.md)
-        - [设计模式-原型模式.md](articles/design_patterns/设计模式-原型模式.md)
-        - [设计模式-命令模式.md](articles/design_patterns/设计模式-命令模式.md)
-        - [设计模式-委派模式.md](articles/design_patterns/设计模式-委派模式.md)
-        - [设计模式-工厂模式.md](articles/design_patterns/设计模式-工厂模式.md)
-        - [设计模式-桥接模式.md](articles/design_patterns/设计模式-桥接模式.md)
-        - [设计模式-模板模式.md](articles/design_patterns/设计模式-模板模式.md)
-        - [设计模式-状态模式.md](articles/design_patterns/设计模式-状态模式.md)
-        - [设计模式-策略模式.md](articles/design_patterns/设计模式-策略模式.md)
-        - [设计模式-组合模式.md](articles/design_patterns/设计模式-组合模式.md)
-        - [设计模式-门面模式.md](articles/design_patterns/设计模式-门面模式.md)
-        - [设计模式-中介者模式.md](articles/design_patterns/设计模式-中介者模式.md)
-        - [设计模式-建造者模式.md](articles/design_patterns/设计模式-建造者模式.md)
-        - [设计模式-装饰器模式.md](articles/design_patterns/设计模式-装饰器模式.md)
-        - [设计模式-观察者模式.md](articles/design_patterns/设计模式-观察者模式.md)
-        - [设计模式-访问者模式.md](articles/design_patterns/设计模式-访问者模式.md)
-        - [设计模式-责任链模式.md](articles/design_patterns/设计模式-责任链模式.md)
-        - [设计模式-迭代器模式.md](articles/design_patterns/设计模式-迭代器模式.md)
-        - [设计模式-适配器模式.md](articles/design_patterns/设计模式-适配器模式.md)
-    - [整体对比.md](articles/整体对比.md)
-    - [七大软件设计原则.md](articles/七大软件设计原则.md)
+- [设计模式文档](articles/design_patterns/),也可以直接阅读[设计模式文档](https://xiaochi-cloud.gitbook.io/design_pattern)
+- [Redis 文档](articles/redis/)，也可以直接阅读[Redis 文档](https://xiaochi-cloud.gitbook.io/redis-in-action)
 
 ## 贡献
 
