@@ -28,6 +28,7 @@
 如果您觉得这个仓库有帮助，请给它点个星星，并且不要忘记通过添加自己的见解或建议改进来做出贡献。
 
 ## 内容概览
+- 设计模式： 可以直接阅读[设计模式文档](https://xiaochi-cloud.gitbook.io/design_pattern) 关于设计模式的详细解释和示例。
 
 - [文章](articles/)
     - [设计模式](articles/design_patterns/)
