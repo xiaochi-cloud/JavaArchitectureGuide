@@ -6,9 +6,9 @@
 
 - [关于](#关于)
 - [入门指南](#入门指南)
-- [设计模式文档](#设计模式文档)
-- [Redis 文档](#redis-文档)
-- [内容概览](#内容概览)
+- [设计模式文档](articles/design_patterns/)
+- [Redis 文档](articles/redis/)
+- [MySQL 文档](articles/mysql/)
 - [贡献](#贡献)
 - [许可证](#许可证)
 
@@ -27,20 +27,7 @@
 - 性能优化
 - 以及更多！
 
-如果您觉得这个仓库有帮助，请给它点个星星，并且不要忘记通过添加自己的见解或建议改进来做出贡献。
 
-## 设计模式文档
-
-您可以在设计模式文档中找到各种设计模式的详细解释和示例代码。也可以直接阅读[设计模式文档](https://xiaochi-cloud.gitbook.io/design_pattern)。
-
-## Redis 文档
-
-Redis文档包含了关于Redis的详细介绍、基础理论、数据类型、高可用集群、性能优化、灾备方案、安全监控、Java客户端、案例实践和进阶等内容。也可以直接阅读[Redis 文档](https://xiaochi-cloud.gitbook.io/redis-in-action)。
-
-## 内容概览
-
-- [设计模式文档](articles/design_patterns/)
-- [Redis 文档](articles/redis/)
 
 ## 贡献
 
@@ -51,3 +38,6 @@ Redis文档包含了关于Redis的详细介绍、基础理论、数据类型、�
 ## 许可证
 
 本仓库基于 MIT 许可证 进行许可。
+
+
+如果您觉得这个仓库有帮助，请给它点个星星，并且不要忘记通过添加自己的见解或建议改进来做出贡献。
