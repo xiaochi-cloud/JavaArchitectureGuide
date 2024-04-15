@@ -7,7 +7,7 @@
 - [设计模式文档](articles/design_patterns/)
 - [Redis 文档](articles/redis/)
 - [MySQL 文档](articles/mysql/)
-  [贡献](CONTRIBUTING.md)
+- [贡献](CONTRIBUTING.md)
 - [许可证](LICENSE)
 
 ## 关于 ℹ️
@@ -18,30 +18,22 @@
 
 要开始使用本指南，请浏览仓库的内容。您可以浏览目录以找到涵盖各种主题的文章、教程和代码示例，例如：
 
-- 设计模式
-- 架构风格（例如 MVC、RESTful）
-- 企业架构
+- 设计模式 [设计模式文档](articles/design_patterns/)
+- 分布式
+  - [Redis 文档](articles/redis/)
+    - 浏览关于 Redis 的详细文档，包括基础理论、数据类型、高可用集群、性能优化、安全监控等内容。
+- MySQL
+  - [MySQL 文档](articles/mysql/)
+    - 发现有关 MySQL 的详细文档，包括数据库基础知识、性能优化、事务处理等方面的内容。
 - 微服务
 - 性能优化
 - 以及更多！
 
-## 设计模式文档 🎨
-
-- [设计模式文档](articles/design_patterns/)
-
-阅读有关设计模式的详细文档，了解常用的设计模式、示例和最佳实践。
-
-## Redis 文档 📋
-
-- [Redis 文档](articles/redis/)
-
-浏览关于 Redis 的详细文档，包括基础理论、数据类型、高可用集群、性能优化、安全监控等内容。
-
-## MySQL 文档 🗃️
-
-- [MySQL 文档](articles/mysql/)
-
-发现有关 MySQL 的详细文档，包括数据库基础知识、性能优化、事务处理等方面的内容。
+## 更新日志
+- 2024/04/11 :feature：【设计模式】补充设计模式的初始化内容，包括 七大软件设计原则、中介模式、享元模式、单例模式等等
+- 2024/04/12 :feature: 
+  - 【Redis】 补充 Redis 的背景、简介、数据类型使用场景、高可用集群、常用性能优化方式
+  - 【MySQL】初始化 MySQL 的内存结构文档，重点介绍 InnoDB 内存结构
 
 ## 贡献 🤝
 
