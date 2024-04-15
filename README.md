@@ -19,14 +19,28 @@
 要开始使用本指南，请浏览仓库的内容。您可以浏览目录以找到涵盖各种主题的文章、教程和代码示例，例如：
 
 - 设计模式 [设计模式文档](articles/design_patterns/)
+- Spring 【TODO】
+- MyBatis【TODO】
 - 分布式
-  - [Redis 文档](articles/redis/)
-    - 浏览关于 Redis 的详细文档，包括基础理论、数据类型、高可用集群、性能优化、安全监控等内容。
-- MySQL
-  - [MySQL 文档](articles/mysql/)
-    - 发现有关 MySQL 的详细文档，包括数据库基础知识、性能优化、事务处理等方面的内容。
-- 微服务
+  - 分布式缓存
+    - Redis [Redis 文档](articles/redis/) 浏览关于 Redis 的详细文档，包括基础理论、数据类型、高可用集群、性能优化、安全监控等内容。
+  - 消息队列
+    - RocketMQ
+    - RabbitMQ
+    - Kafka
+- 微服务 【TODO】
+  - Dubbo
+  - Spring Cloud Alibaba
+    - 注册中心 Nacos
+    - 配置中心 Nacos
+    - 负载均衡 Ribbon
+    - 远程调用 Feign
+    - 服务限流 Sentinel
+    - 服务网关 GateWay
 - 性能优化
+  - Tomcat
+  - JVM
+  - MySQL [MySQL 文档](articles/mysql/) 发现有关 MySQL 的详细文档，包括数据库基础知识、性能优化、事务处理等方面的内容。
 - 以及更多！
 
 ## 更新日志
