@@ -64,6 +64,8 @@
 - 2024/04/12 :feature: 
   - 【Redis】 补充 Redis 的背景、简介、数据类型使用场景、高可用集群、常用性能优化方式
   - 【MySQL】初始化 MySQL 的内存结构文档，重点介绍 InnoDB 内存结构
+- 2024/04/15 :feature:
+  - 【MySQL】 补充 MySQL 磁盘结构 ，包括表空间、数据字典、双写缓冲区、RedoLog、Undo Log 、binLog 以及新版本在磁盘结构上的变化 [002 InnoDB 磁盘结构](articles/mysql/002%20InnoDB%20磁盘结构.md)
 
 ## 贡献 🤝
 
