@@ -1,124 +1,71 @@
-# Java 架构指南 🚀
+# Java 架构探秘 🚀
 
-欢迎来到 Java 架构指南仓库！这个仓库旨在提供有关 Java 软件架构的见解、最佳实践和学习资源。
+欢迎踏入 Java 架构探秘的神奇世界！这里不仅仅是一堆文档，更是一段引领你探索 Java 软件架构的奇妙之旅。
 
 ## 内容目录
 
-- [设计模式文档](articles/design_patterns/)
-- [Redis 文档](articles/redis/)
-- [MySQL 文档](articles/mysql/)
+- [设计模式秘籍](articles/design_patterns/)
+- [Redis 神秘大陆](articles/redis/)
+- [MySQL 数据宝典](articles/mysql/)
 - [贡献](CONTRIBUTING.md)
 - [许可证](LICENSE)
 
-## 关于 ℹ️
+## 神秘之处 ℹ️
 
-在这个仓库中，您将找到一系列精选的文章、教程、代码示例和资源，涵盖了与 Java 软件架构相关的各种主题。无论您是初学者想要了解基本架构概念，还是经验丰富的开发人员寻求高级技术和最佳实践，本指南旨在提供有价值的见解和实用知识。
+这个仓库不只是为了摆设，它汇聚了 Java 软件架构的精髓，包括见解、最佳实践和学习资源。无论您是想要探索基本概念的新手，还是渴望深入高级技术和最佳实践的老鸟，这里都会给您提供有价值的指引和实用知识。
 
-## 入门指南 📚
+## 开启冒险之旅 📚
 
-要开始使用本指南，请浏览仓库的内容。您可以浏览目录以找到涵盖各种主题的文章、教程和代码示例，例如：
+想要踏上这段冒险之旅吗？那就从我们的目录开始吧！您可以在目录中发现各种神奇的文章、教程和代码示例，例如：
 
-- 基础
-  - 设计模式 [设计模式文档](articles/design_patterns/) 【Done 2024/04/11】
+- 初级阶段
+  - 设计模式秘籍 [设计模式文档](articles/design_patterns/) 【已完成 2024/04/11】
     - [001 七大软件设计原则](articles/design_patterns/001%20七大软件设计原则.md)
     - [002 中介者模式](articles/design_patterns/002%20中介者模式.md)
     - [003 享元模式](articles/design_patterns/003%20享元模式.md)
-    - [004 单例模式](articles/design_patterns/004%20单例模式.md)
-    - [005 观察者模式](articles/design_patterns/005%20观察者模式.md)
-    - [006 迭代器模式](articles/design_patterns/006%20迭代器模式.md)
-    - [007 策略模式](articles/design_patterns/007%20策略模式.md)
-    - [008 状态模式](articles/design_patterns/008%20状态模式.md)
-    - [009 备忘录模式](articles/design_patterns/009%20备忘录模式.md)
-    - [010 访问者模式](articles/design_patterns/010%20访问者模式.md)
-    - [011 解释器模式](articles/design_patterns/011%20解释器模式.md)
-    - [012 建造者模式](articles/design_patterns/012%20建造者模式.md)
-    - [013 原型模式](articles/design_patterns/013%20原型模式.md)
-    - [014 代理模式](articles/design_patterns/014%20代理模式.md)
-    - [015 适配器模式](articles/design_patterns/015%20适配器模式.md)
-    - [016 组合模式](articles/design_patterns/016%20组合模式.md)
-    - [017 装饰者模式](articles/design_patterns/017%20装饰者模式.md)
-    - [018 外观模式](articles/design_patterns/018%20外观模式.md)
-    - [019 享元模式](articles/design_patterns/019%20享元模式.md)
-    - [020 外观模式](articles/design_patterns/020%20外观模式.md)
-    - [021 门面模式](articles/design_patterns/021%20门面模式.md)
-    - [022 享元模式](articles/design_patterns/022%20享元模式.md)
-    - [999 其他](articles/design_patterns/999%20其他.md)
-    - [README](articles/design_patterns/README.md)
-  - 算法
-  - Java 基础 【TODO】
-  - 并发编程 【TODO】
-  - Spring 【TODO】
-  - Spring Boot 【TODO】
-  - MyBatis【TODO】
-- 分布式
-  - 分布式缓存
-    - Redis [Redis 文档](articles/redis/) 浏览关于 Redis 的详细文档，包括基础理论、数据类型、高可用集群、性能优化、安全监控等内容。【Done 2024/04/12】
-      - [001 背景&基础理论](articles/redis/001%20背景&基础理论.md)
-      - [002 简介&特性](articles/redis/002%20简介&特性.md)
-      - [003 数据类型&使用场景](articles/redis/003%20数据类型&使用场景.md)
-      - [004 高可用集群](articles/redis/004%20高可用集群.md)
-      - [005 常见性能优化方式](articles/redis/005%20常见性能优化方式.md)
-      - [006 灾备方案](articles/redis/006%20灾备方案.md)
-      - [007 安全&监控](articles/redis/007%20安全&监控.md)
-      - [008 常见Java客户端](articles/redis/008%20常见Java客户端.md)
-      - [009 案例实践&进阶](articles/redis/009%20案例实践&进阶.md)
-      - [010 书籍参考](articles/redis/010%20书籍参考.md)
-      - [README](articles/redis/README.md)
-  - 消息队列
-    - RocketMQ
-    - RabbitMQ
-    - Kafka
-  - 分库分表
-    - MyCat
-    - Sharding-JDBC\ShardingSphere
-  - 任务调度
-    - Spring-Scheduler
-    - Quartz
-    - xxl-Job
-  - 通信框架
-    - Netty
-  - 服务监控
-- 微服务 【TODO】
-  - Dubbo
-  - Spring Cloud Alibaba
-    - 注册中心 Nacos
-    - 配置中心 Nacos
-    - 负载均衡 Ribbon
-    - 远程调用 Feign
-    - 服务限流 Sentinel
-    - 服务网关 GateWay
-    - 分布式事务 Seata
-- 性能优化
-  - Tomcat
-  - JVM
-  - MySQL [MySQL 文档](articles/mysql/) 发现有关 MySQL 的详细文档，包括数据库基础知识、性能优化、事务处理等方面的内容。 【Doing】
+    - ...
+
+- 分布式探索
+  - Redis 神秘大陆 [Redis 文档](articles/redis/) 【已完成 2024/04/12】
+    - [001 背景&基础理论](articles/redis/001%20背景&基础理论.md)
+    - [002 简介&特性](articles/redis/002%20简介&特性.md)
+    - [003 数据类型&使用场景](articles/redis/003%20数据类型&使用场景.md)
+    - ...
+
+- 数据之谜
+  - MySQL 数据宝典 [MySQL 文档](articles/mysql/) 【进行中】
     - [001 InnoDB 内存结构](articles/mysql/001%20InnoDB%20内存结构.md)
     - [002 InnoDB 磁盘结构](articles/mysql/002%20InnoDB%20磁盘结构.md)
     - [003 InnoDB 线程模型](articles/mysql/003%20InnoDB%20线程模型.md)
-    - [004 InnoDB 数据文件](articles/mysql/004%20InnoDB%20数据文件.md)
-    - [005 InnoDB 参数优化](articles/mysql/005%20InnoDB%20参数优化.md)
-- 以及更多！
+    - ...
 
-## 更新日志
-- 2024/04/11 :feature：【设计模式】补充设计模式的初始化内容，包括 七大软件设计原则、中介模式、享元模式、单例模式等等 [设计模式概览](articles/design_patterns/README.md)
-- 2024/04/12 :feature: 
-  - 【Redis】 补充 Redis 的背景、简介、数据类型使用场景、高可用集群、常用性能优化方式 [Redis文档概览](articles/redis/001%20背景&基础理论.md)
-  - 【MySQL】初始化 MySQL 的内存结构文档，重点介绍 InnoDB 内存结构 [001 InnoDB 内存结构](articles/mysql/001%20InnoDB%20内存结构.md)
-- 2024/04/15 :feature:
-  - 【MySQL】 补充 MySQL 磁盘结构 ，包括表空间、数据字典、双写缓冲区、RedoLog、Undo Log 、binLog 以及新版本在磁盘结构上的变化 [002 InnoDB 磁盘结构](articles/mysql/002%20InnoDB%20磁盘结构.md)
-- 2024/04/16 :feature:
-  - 【MySQL】 补充 InnoDB 线程模型，包括 IO 线程、purge 线程、Page Clean 线程 、Master 线程 [003 InnoDB 线程模型](articles/mysql/003%20InnoDB%20线程模型.md)
-  - 【MySQL】 补充 InnoDB 数据文件，包括表空间文件结构、Page 结构、行结构，包括行结构的压缩和存储方式 [004 InnoDB 数据文件](articles/mysql/004%20InnoDB%20数据文件.md)
-  - 【MySQL】 补充 InnoDB 参数优化技巧，包括 Buffer Pool 多实例、Buffer Pool 大小设置、缓存性能的评估,日志参数的优化大小的设置、IO线程的优化和设置 [005 InnoDB 参数优化](articles/mysql/005%20InnoDB%20参数优化.md)
+## 未来的规划 🌟
 
-## 贡献 🤝
+我们的探索之旅才刚刚开始，未来我们还将添加更多令人激动的内容，包括但不限于：
 
-我们鼓励对这个仓库进行贡献！如果您有任何与 Java 架构相关的见解、教程、代码示例或资源，欢迎提交拉取请求。您的贡献将有助于改进这个指南，使其对其他人更有价值。
+- Java 基础知识的深入探索
+- 并发编程的高级技巧分享
+- Spring 和 Spring Boot 框架的应用实践
+- 微服务架构的设计和实现方法
+- 性能优化和调优的技术指南
+- ...
 
-有关如何贡献的更多信息，请参阅 [CONTRIBUTING.md](CONTRIBUTING.md) 文件。
+## 更新日志 📜
+
+- 2024/04/11: 🌟 新特性入场！【设计模式】加入设计模式秘籍，包括七大软件设计原则、中介者模式、享元模式、单例模式等等。一起来探索设计模式的奥秘吧！[设计模式概览](articles/design_patterns/README.md)
+- 2024/04/12: 🚀 探索新大陆！【Redis】加入 Redis 神秘大陆，揭秘其背景、简介、数据类型、高可用集群、性能优化等。快来一探究竟，掌握 Redis 的魔法！[Redis文档概览](articles/redis/001%20背景&基础理论.md)
+  - 📘 【MySQL】继续探索 MySQL 数据宝典，深入了解 InnoDB 内存结构。从数据内核中汲取智慧，开启数据库之旅！[001 InnoDB 内存结构](articles/mysql/001%20InnoDB%20内存结构.md)
+- 2024/04/15: 📚 深入挖掘！【MySQL】补充 MySQL 磁盘结构，包括表空间、数据字典、双写缓冲区等。解锁数据库的磁盘奥秘，一览存储之道！[002 InnoDB 磁盘结构](articles/mysql/002%20InnoDB%20磁盘结构.md)
+- 2024/04/16: 🔍 探寻更深层次！【MySQL】继续补充 InnoDB 线程模型，涵盖 IO 线程、purge 线程等。了解数据库内部运作，开启线程追踪之旅！[003 InnoDB 线程模型](articles/mysql/003%20InnoDB%20线程模型.md)
+  - 📝 再进一步！【MySQL】继续补充 InnoDB 数据文件，揭示表空间文件结构、Page 结构等。深入探索数据存储的秘密，解码行结构的奥妙！[004 InnoDB 数据文件](articles/mysql/004%20InnoDB%20数据文件.md)
+  - 🛠 提升优化！【MySQL】补充 InnoDB 参数优化技巧，包括 Buffer Pool 多实例、Buffer Pool 大小设置等。优化数据库性能，提升数据处理效率！[005 InnoDB 参数优化](articles/mysql/005%20InnoDB%20参数优化.md)
+
+## 召唤大神们 💫
+
+我们期待您的加入！如果您对 Java 架构有任何见解、教程、代码示例或资源，欢迎您为这个探索之旅贡献自己的一份力量。让我们一起探索更多、发现更多、创造更多！
 
 ## 许可证 📄
 
-本仓库基于 Apache 许可证 进行许可。
+本仓库基于 Apache 许可证，开放源码，为了构建一个更美好的开源社区，我们期待您的加入！
 
-如果您觉得这个仓库有帮助，请给它点个星星，并且不要忘记通过添加自己的见解或建议改进来做出贡献。
+如果您觉得这个仓库有价值，请别吝啬您的 star，同时也欢迎通过分享您的见解或建议来一同改进它。让我们共同打造一个Java架构的乐园！
