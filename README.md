@@ -69,3 +69,9 @@
 本仓库基于 Apache 许可证，开放源码，为了构建一个更美好的开源社区，我们期待您的加入！
 
 如果您觉得这个仓库有价值，请别吝啬您的 star，同时也欢迎通过分享您的见解或建议来一同改进它。让我们共同打造一个Java架构的乐园！
+
+----
+
+
+
+当你发现这些内容对你有帮助时，为了支持我的工作，不妨给一个**免费的⭐Star**，这将是对我最大的鼓励！感谢你的陪伴与支持！一起在技术的路上**共同成长**吧！点击链接：[GitHub](https://github.com/xiaochi-cloud/JavaArchitectureGuide) | [Gitee](https://gitee.com/xiaochi-cloud/java-architecture-guide)
