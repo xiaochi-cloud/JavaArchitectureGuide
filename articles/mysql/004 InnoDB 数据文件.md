@@ -171,7 +171,7 @@ ALTER TABLE <table_name> ROW_FORMAT=行格式名称
 
 记录的真实数据除了插入的那些列的数据，MySQL会为每个记录默认的添加一些列（也称为隐藏列），具体的列如下： 
 
-![img](./assets/1713180959619-d58695ad-bb23-4591-a899-d29f1632a178.png)![img](../../../../../../../../02_%E5%9B%BE%E7%89%87/51.jpg)
+![img](./assets/1713180959619-d58695ad-bb23-4591-a899-d29f1632a178.png)
 
 实际上这几个列的真正名称其实是：DB_ROW_ID、DB_TRX_ID、DB_ROLL_PTR，我们为了美观才写成了row _id、transaction_id和roll_pointer。
 
@@ -205,7 +205,7 @@ InnoDB 规定一页至少存储两条记录(B+树特点)，如果页中只能存
 DYNAMIC 和 COMPRESSED新格式引入的功能有：数据压缩、增强型长列数据的页外存储和大索引前缀。
 Compressed 和 Dynamic 行记录格式与 Compact 行记录格式是类似的，区别是在处理行溢出时,数据页不会存储真实数据的前768字节(完全溢出)，只存储20个字节的指针来指向溢出页。 
 
-![img](./assets/1713233212495-083a74cf-26b2-45c9-beed-9ba1904d5700.jpeg)![img](../../../../../../../../02_%E5%9B%BE%E7%89%87/53.jpg)
+![img](./assets/1713233212495-083a74cf-26b2-45c9-beed-9ba1904d5700.jpeg)
 
 Compressed 与 Dynamic 相比，**Compressed 存储的行数据会以zlib的算法进行压缩以节省空间**，因此对于 BLOB、TEXT、VARCHAR 这类大长度类型的数据能够进行非常有效的存储。
 
@@ -215,4 +215,4 @@ MySQL5.7 默认的行记录格式是 `Dynamic`。
 
 ![img](./assets/1713233237973-accebc4e-fcd6-425b-843a-b5eac52eead9.jpeg)
 
-Redundant是 MySQL5.0 版本之前 InnoDB 的行记录存储方式。 ![img](../../../../../../../../02_%E5%9B%BE%E7%89%87/52.jpg)
+Redundant是 MySQL5.0 版本之前 InnoDB 的行记录存储方式。 
