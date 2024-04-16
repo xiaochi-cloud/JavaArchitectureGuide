@@ -57,6 +57,11 @@
   - Tomcat
   - JVM
   - MySQL [MySQL 文档](articles/mysql/) 发现有关 MySQL 的详细文档，包括数据库基础知识、性能优化、事务处理等方面的内容。 【Doing】
+    - [001 InnoDB 内存结构](articles/mysql/001%20InnoDB%20内存结构.md)
+    - [002 InnoDB 磁盘结构](articles/mysql/002%20InnoDB%20磁盘结构.md)
+    - [003 InnoDB 线程模型](articles/mysql/003%20InnoDB%20线程模型.md)
+    - [004 InnoDB 数据文件](articles/mysql/004%20InnoDB%20数据文件.md)
+    - [005 InnoDB 参数优化](articles/mysql/005%20InnoDB%20参数优化.md)
 - 以及更多！
 
 ## 更新日志
@@ -66,6 +71,10 @@
   - 【MySQL】初始化 MySQL 的内存结构文档，重点介绍 InnoDB 内存结构 [001 InnoDB 内存结构](articles/mysql/001%20InnoDB%20内存结构.md)
 - 2024/04/15 :feature:
   - 【MySQL】 补充 MySQL 磁盘结构 ，包括表空间、数据字典、双写缓冲区、RedoLog、Undo Log 、binLog 以及新版本在磁盘结构上的变化 [002 InnoDB 磁盘结构](articles/mysql/002%20InnoDB%20磁盘结构.md)
+- 2024/04/16 :feature:
+  - 【MySQL】 补充 InnoDB 线程模型，包括 IO 线程、purge 线程、Page Clean 线程 、Master 线程 [003 InnoDB 线程模型](articles/mysql/003%20InnoDB%20线程模型.md)
+  - 【MySQL】 补充 InnoDB 数据文件，包括表空间文件结构、Page 结构、行结构，包括行结构的压缩和存储方式 [004 InnoDB 数据文件](articles/mysql/004%20InnoDB%20数据文件.md)
+  - 【MySQL】 补充 InnoDB 参数优化技巧，包括 Buffer Pool 多实例、Buffer Pool 大小设置、缓存性能的评估,日志参数的优化大小的设置、IO线程的优化和设置 [005 InnoDB 参数优化](articles/mysql/005%20InnoDB%20参数优化.md)
 
 ## 贡献 🤝
 
