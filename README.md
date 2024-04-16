@@ -20,6 +20,30 @@
 
 - 基础
   - 设计模式 [设计模式文档](articles/design_patterns/) 【Done 2024/04/11】
+    - [001 七大软件设计原则](articles/design_patterns/001%20七大软件设计原则.md)
+    - [002 中介者模式](articles/design_patterns/002%20中介者模式.md)
+    - [003 享元模式](articles/design_patterns/003%20享元模式.md)
+    - [004 单例模式](articles/design_patterns/004%20单例模式.md)
+    - [005 观察者模式](articles/design_patterns/005%20观察者模式.md)
+    - [006 迭代器模式](articles/design_patterns/006%20迭代器模式.md)
+    - [007 策略模式](articles/design_patterns/007%20策略模式.md)
+    - [008 状态模式](articles/design_patterns/008%20状态模式.md)
+    - [009 备忘录模式](articles/design_patterns/009%20备忘录模式.md)
+    - [010 访问者模式](articles/design_patterns/010%20访问者模式.md)
+    - [011 解释器模式](articles/design_patterns/011%20解释器模式.md)
+    - [012 建造者模式](articles/design_patterns/012%20建造者模式.md)
+    - [013 原型模式](articles/design_patterns/013%20原型模式.md)
+    - [014 代理模式](articles/design_patterns/014%20代理模式.md)
+    - [015 适配器模式](articles/design_patterns/015%20适配器模式.md)
+    - [016 组合模式](articles/design_patterns/016%20组合模式.md)
+    - [017 装饰者模式](articles/design_patterns/017%20装饰者模式.md)
+    - [018 外观模式](articles/design_patterns/018%20外观模式.md)
+    - [019 享元模式](articles/design_patterns/019%20享元模式.md)
+    - [020 外观模式](articles/design_patterns/020%20外观模式.md)
+    - [021 门面模式](articles/design_patterns/021%20门面模式.md)
+    - [022 享元模式](articles/design_patterns/022%20享元模式.md)
+    - [999 其他](articles/design_patterns/999%20其他.md)
+    - [README](articles/design_patterns/README.md)
   - 算法
   - Java 基础 【TODO】
   - 并发编程 【TODO】
@@ -29,6 +53,17 @@
 - 分布式
   - 分布式缓存
     - Redis [Redis 文档](articles/redis/) 浏览关于 Redis 的详细文档，包括基础理论、数据类型、高可用集群、性能优化、安全监控等内容。【Done 2024/04/12】
+      - [001 背景&基础理论](articles/redis/001%20背景&基础理论.md)
+      - [002 简介&特性](articles/redis/002%20简介&特性.md)
+      - [003 数据类型&使用场景](articles/redis/003%20数据类型&使用场景.md)
+      - [004 高可用集群](articles/redis/004%20高可用集群.md)
+      - [005 常见性能优化方式](articles/redis/005%20常见性能优化方式.md)
+      - [006 灾备方案](articles/redis/006%20灾备方案.md)
+      - [007 安全&监控](articles/redis/007%20安全&监控.md)
+      - [008 常见Java客户端](articles/redis/008%20常见Java客户端.md)
+      - [009 案例实践&进阶](articles/redis/009%20案例实践&进阶.md)
+      - [010 书籍参考](articles/redis/010%20书籍参考.md)
+      - [README](articles/redis/README.md)
   - 消息队列
     - RocketMQ
     - RabbitMQ
