@@ -54,12 +54,13 @@
 
 - 2024/04/11: 🌟 新特性入场！【设计模式】加入设计模式秘籍，包括七大软件设计原则、中介者模式、享元模式、单例模式等等。一起来探索设计模式的奥秘吧！[设计模式概览](articles/design_patterns/README.md)
 - 2024/04/12: 🚀 探索新大陆！【Redis】加入 Redis 神秘大陆，揭秘其背景、简介、数据类型、高可用集群、性能优化等。快来一探究竟，掌握 Redis 的魔法！[Redis文档概览](articles/redis/001%20背景&基础理论.md)
-  - 📘 【MySQL】继续探索 MySQL 数据宝典，深入了解 InnoDB 内存结构。从数据内核中汲取智慧，开启数据库之旅！[001 InnoDB 内存结构](articles/mysql/001%20InnoDB%20内存结构.md)
-- 2024/04/15: 📚 深入挖掘！【MySQL】补充 MySQL 磁盘结构，包括表空间、数据字典、双写缓冲区等。解锁数据库的磁盘奥秘，一览存储之道！[002 InnoDB 磁盘结构](articles/mysql/002%20InnoDB%20磁盘结构.md)
-- 2024/04/16: 🔍 探寻更深层次！【MySQL】继续补充 InnoDB 线程模型，涵盖 IO 线程、purge 线程等。了解数据库内部运作，开启线程追踪之旅！[003 InnoDB 线程模型](articles/mysql/003%20InnoDB%20线程模型.md)
-  - 📝 再进一步！【MySQL】继续补充 InnoDB 数据文件，揭示表空间文件结构、Page 结构等。深入探索数据存储的秘密，解码行结构的奥妙！[004 InnoDB 数据文件](articles/mysql/004%20InnoDB%20数据文件.md)
-  - 🛠 提升优化！【MySQL】补充 InnoDB 参数优化技巧，包括 Buffer Pool 多实例、Buffer Pool 大小设置等。优化数据库性能，提升数据处理效率！[005 InnoDB 参数优化](articles/mysql/005%20InnoDB%20参数优化.md)
-- 2024/04/17 🎉 优化升级！【MySQL】新增 InnoDB 索引优化技巧，包括索引类型、索引选择、索引优化等。提升数据库查询效率，优化数据检索速度！[006 InnoDB 索引优化](articles/mysql/006%20InnoDB%20索引优化.md)
+  - 📘 【MySQL】继续探索 MySQL 数据宝典，深入了解 InnoDB 内存结构。从数据内核中汲取智慧，开启数据库之旅！[001 InnoDB 内存结构](articles/mysql/001%20存储引擎原理&优化/001%20内存结构/1.1%20Buffer%20Pool.md)
+- 2024/04/15: 📚 深入挖掘！【MySQL】补充 MySQL 磁盘结构，包括表空间、数据字典、双写缓冲区等。解锁数据库的磁盘奥秘，一览存储之道！[002 InnoDB 磁盘结构](articles/mysql/001%20存储引擎原理&优化/002%20磁盘结构/2.0%20InnoDB%20磁盘结构.md)
+- 2024/04/16: 🔍 探寻更深层次！【MySQL】继续补充 InnoDB 线程模型，涵盖 IO 线程、purge 线程等。了解数据库内部运作，开启线程追踪之旅！[003 InnoDB 线程模型](articles/mysql/001%20存储引擎原理&优化/003%20InnoDB%20线程模型.md)
+  - 📝 再进一步！【MySQL】继续补充 InnoDB 数据文件，揭示表空间文件结构、Page 结构等。深入探索数据存储的秘密，解码行结构的奥妙！[004 InnoDB 数据文件](articles/mysql/001%20存储引擎原理&优化/004%20InnoDB%20数据文件.md)
+  - 🛠 提升优化！【MySQL】补充 InnoDB 参数优化技巧，包括 Buffer Pool 多实例、Buffer Pool 大小设置等。优化数据库性能，提升数据处理效率！[005 InnoDB 参数优化](articles/mysql/001%20存储引擎原理&优化/005%20InnoDB%20参数优化.md)
+- 2024/04/17  【MySQL】优化了MySQL的整体数据目录，更方便阅读
+- 2024/04/18   补充了MySQL的索引底层原理 [MySQL索引原理](articles/mysql/002%20MySQL索引原理&优化/001-索引原理.md)
 
 ## 召唤大神们 💫
 
