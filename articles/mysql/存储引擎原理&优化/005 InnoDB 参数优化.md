@@ -167,7 +167,7 @@ mysql> show global status like '%innodb_buffer_pool_pages%';
  **优化建议**
 innodb_page_size的官方描述: 
 
-![56](./assets/56.jpg)
+![56](../assets/56.jpg)
 
 - MySQL 5.7增加了对32KB和64KB页面大小的支持。默认的16KB或更大的页面大小适用于各种工作负载，特别是涉及表扫描的查询和涉及批量更新的DML操作。对于涉及许多小写操作的OLTP工作负载，较小的页面大小可能更有效. 
 -  Page大小对于行存储的影响

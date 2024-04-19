@@ -2,7 +2,7 @@
 
 ### 1.4.1 表空间文件结构
 
-![img](./assets/1713179399179-db6bd6ef-aa68-4686-9435-91802896d7da.jpeg)
+![img](../assets/1713179399179-db6bd6ef-aa68-4686-9435-91802896d7da.jpeg)
 
 InnoDB表空间文件结构主要包括：Tablespace（表空间）、Segment（段）、Extent（区）、Page（页）、Row（行）。
 
@@ -35,7 +35,7 @@ InnoDB存储引擎的Page是整个存储系统的最小单位，用于存储数�
 
 Page分为几种类型，常见的页类型有数据页（B+tree Node）Undo页（Undo Log Page）系统页（System Page） 事务数据页（Transaction System Page）等
 
-![img](./assets/1713179580423-e6baa3d2-ae50-4478-86b8-fba51652d253.jpeg)
+![img](../assets/1713179580423-e6baa3d2-ae50-4478-86b8-fba51652d253.jpeg)
 
 | 名称               | 占用大小 | 说明                                |
 | ------------------ | -------- | ----------------------------------- |
@@ -63,20 +63,20 @@ Page分为几种类型，常见的页类型有数据页（B+tree Node）Undo页�
 
 其中比较重要的是在文件头中的 `FIL_PAGE_PREV` 和 `FIL_PAGE_NEXT` 字段，通过这两个字段，我们可以找到该页的上一页和下一页，实际上所有页通过两个字段可以形成一条双向链表
 
-![img](./assets/1713179724108-68a9025d-fbab-4d39-b10a-ce37c71bf0c5.jpeg)
+![img](../assets/1713179724108-68a9025d-fbab-4d39-b10a-ce37c71bf0c5.jpeg)
 
 #### 记录部分 (User Records & Free Space)
 
 页的主要作用是存储记录，所以“最小和最大记录”和“用户记录”部分占了页结构的主要空间。另外空闲空间是个灵活的部分，当有新的记录插入时，会从空闲空间中进行分配用于存储新记录
 
-![img](./assets/1713179775912-1309cbfb-6bdd-48df-a987-4cca7bc20e28.jpeg)
+![img](../assets/1713179775912-1309cbfb-6bdd-48df-a987-4cca7bc20e28.jpeg)
 
 #### 数据目录部分 (Page Directory)
 
 - 数据页中行记录按照主键值由小到大顺序串联成一个单链表(**页中记录是以单向链表的形式进行存储的**)，且单链表的链表头为最小记录，链表尾为最大记录。
 - 并且为了更快速地定位到指定的行记录，通过`Page Directory`实现目录的功能，借助`Page Directory`使用二分法快速找到需要查找的行记录。
 
-![img](./assets/1713179877649-5fdd8f34-fda6-4c8a-9b7e-cb21b6de9509.jpeg)
+![img](../assets/1713179877649-5fdd8f34-fda6-4c8a-9b7e-cb21b6de9509.jpeg)
 
 ### 1.4.3 行记录格式
 
@@ -108,14 +108,14 @@ ALTER TABLE <table_name> ROW_FORMAT=行格式名称
 
 #### COMPACT 行记录格式
 
-![img](./assets/1713180083973-e916b885-e3e7-4093-9509-ce89bf5697fa.png)
+![img](../assets/1713180083973-e916b885-e3e7-4093-9509-ce89bf5697fa.png)
 
 - Compact 设计目标是高效地存储数据，一个页中存放的行数据越多，其性能就越高。
 - Compact 行记录由两部分组成: 记录放入额外信息和 记录的真实数据.
 
 以这条记录为例
 
-![img](./assets/1713180846456-c3db3262-e9f7-4cf3-a491-15b7542b762a.png)
+![img](../assets/1713180846456-c3db3262-e9f7-4cf3-a491-15b7542b762a.png)
 
 ##### 记录额外信息部分
 
@@ -138,11 +138,11 @@ ALTER TABLE <table_name> ROW_FORMAT=行格式名称
 
 - 例如：  c1 、 c3 、 c4 这3个列中 c3 和 c4 的值都为 NULL ，所以这3个列对应的二进制位的情况如下
 
-![img](./assets/1713180530857-19df7cd1-c4c2-479b-b9a5-dc2cecfedef3.png)
+![img](../assets/1713180530857-19df7cd1-c4c2-479b-b9a5-dc2cecfedef3.png)
 
 最终记录是
 
-![img](./assets/1713180791436-7d1b0a87-354f-4311-abd1-63bc15f1bae1.png)
+![img](../assets/1713180791436-7d1b0a87-354f-4311-abd1-63bc15f1bae1.png)
 
 
 
@@ -150,7 +150,7 @@ ALTER TABLE <table_name> ROW_FORMAT=行格式名称
 
 - 记录头信息是由固定的5个字节组成，5个字节也就是40个二进制位，不同的位代表不同的意思，这些头信息会在后面的一些功能中看到。 
 
-![img](./assets/1713180446450-e14ca2ce-6162-4f49-b521-287a021e7f27.png)
+![img](../assets/1713180446450-e14ca2ce-6162-4f49-b521-287a021e7f27.png)
 
 | 名称         | 大小(单位:bit) | 描述                                                         | 补充说明                                                     |
 | ------------ | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -171,11 +171,11 @@ ALTER TABLE <table_name> ROW_FORMAT=行格式名称
 
 记录的真实数据除了插入的那些列的数据，MySQL会为每个记录默认的添加一些列（也称为隐藏列），具体的列如下： 
 
-![img](./assets/1713180959619-d58695ad-bb23-4591-a899-d29f1632a178.png)
+![img](../assets/1713180959619-d58695ad-bb23-4591-a899-d29f1632a178.png)
 
 实际上这几个列的真正名称其实是：DB_ROW_ID、DB_TRX_ID、DB_ROLL_PTR，我们为了美观才写成了row _id、transaction_id和roll_pointer。
 
-![img](./assets/1713181040876-9fc8a228-8bc5-4d18-92ed-6100cae2bac7.png)
+![img](../assets/1713181040876-9fc8a228-8bc5-4d18-92ed-6100cae2bac7.png)
 生成隐藏主键列的方式有: 
 
 1. 服务器会在内存中维护一个全局变量，每当向某个包含隐藏的row_id列的表中插入一条记录时，就会把该变量的值当作新记录的row_id列的值，并且把该变量自增1。
@@ -196,7 +196,7 @@ MySQL中是以页为基本单位进行磁盘与内存之间的数据交互。每
 
 InnoDB 规定一页至少存储两条记录(B+树特点)，如果页中只能存放下一条记录，InnoDB存储引擎会自动将行数据存放到溢出页中。当发生行溢出时，数据页只保存了前768字节的前缀数据，接着是20个字节的偏移量，指向行溢出页。
 
-![img](./assets/1713233128414-e05edccf-c3c2-40d1-a0ae-4b8a1f70cdae.jpeg)
+![img](../assets/1713233128414-e05edccf-c3c2-40d1-a0ae-4b8a1f70cdae.jpeg)
 
 #### 其他行记录格式
 
@@ -205,7 +205,7 @@ InnoDB 规定一页至少存储两条记录(B+树特点)，如果页中只能存
 DYNAMIC 和 COMPRESSED新格式引入的功能有：数据压缩、增强型长列数据的页外存储和大索引前缀。
 Compressed 和 Dynamic 行记录格式与 Compact 行记录格式是类似的，区别是在处理行溢出时,数据页不会存储真实数据的前768字节(完全溢出)，只存储20个字节的指针来指向溢出页。 
 
-![img](./assets/1713233212495-083a74cf-26b2-45c9-beed-9ba1904d5700.jpeg)
+![img](../assets/1713233212495-083a74cf-26b2-45c9-beed-9ba1904d5700.jpeg)
 
 Compressed 与 Dynamic 相比，**Compressed 存储的行数据会以zlib的算法进行压缩以节省空间**，因此对于 BLOB、TEXT、VARCHAR 这类大长度类型的数据能够进行非常有效的存储。
 
@@ -213,6 +213,6 @@ MySQL5.7 默认的行记录格式是 `Dynamic`。
 
 ##### Redundant
 
-![img](./assets/1713233237973-accebc4e-fcd6-425b-843a-b5eac52eead9.jpeg)
+![img](../assets/1713233237973-accebc4e-fcd6-425b-843a-b5eac52eead9.jpeg)
 
 Redundant是 MySQL5.0 版本之前 InnoDB 的行记录存储方式。 
