@@ -59,6 +59,7 @@
 - 2024/04/16: 🔍 探寻更深层次！【MySQL】继续补充 InnoDB 线程模型，涵盖 IO 线程、purge 线程等。了解数据库内部运作，开启线程追踪之旅！[003 InnoDB 线程模型](articles/mysql/003%20InnoDB%20线程模型.md)
   - 📝 再进一步！【MySQL】继续补充 InnoDB 数据文件，揭示表空间文件结构、Page 结构等。深入探索数据存储的秘密，解码行结构的奥妙！[004 InnoDB 数据文件](articles/mysql/004%20InnoDB%20数据文件.md)
   - 🛠 提升优化！【MySQL】补充 InnoDB 参数优化技巧，包括 Buffer Pool 多实例、Buffer Pool 大小设置等。优化数据库性能，提升数据处理效率！[005 InnoDB 参数优化](articles/mysql/005%20InnoDB%20参数优化.md)
+- 2024/04/17 🎉 优化升级！【MySQL】新增 InnoDB 索引优化技巧，包括索引类型、索引选择、索引优化等。提升数据库查询效率，优化数据检索速度！[006 InnoDB 索引优化](articles/mysql/006%20InnoDB%20索引优化.md)
 
 ## 召唤大神们 💫
 
