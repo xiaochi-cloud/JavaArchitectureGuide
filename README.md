@@ -61,6 +61,7 @@
   - 🛠 提升优化！【MySQL】补充 InnoDB 参数优化技巧，包括 Buffer Pool 多实例、Buffer Pool 大小设置等。优化数据库性能，提升数据处理效率！[005 InnoDB 参数优化](articles/mysql/001%20存储引擎原理&优化/005%20InnoDB%20参数优化.md)
 - 2024/04/17  【MySQL】优化了MySQL的整体数据目录，更方便阅读
 - 2024/04/18   补充了MySQL的索引底层原理 [MySQL索引原理](articles/mysql/002%20MySQL索引原理&优化/001-索引原理.md)
+- 2024/04/22  优化  Mysql 磁盘结构 [undolog 撤销日志的原理](articles/mysql/001%20存储引擎原理&优化/002%20磁盘结构/2.5%20撤销日志%20(%20undo%20log%20).md) 和 [redo log](articles/mysql/001%20存储引擎原理&优化/002%20磁盘结构/2.4%20重做日志%20(redo%20log).md)
 
 ## 召唤大神们 💫
 
