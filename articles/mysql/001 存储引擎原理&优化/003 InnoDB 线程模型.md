@@ -1,7 +1,6 @@
-## 1.3 线程模型
+# 一、 线程模型
 
-![img](../assets/1713161696513-c7d16809-effd-42c9-8fcb-efce8528b04a-20240416105309264.jpeg)
-
+![42.jpg](./assets/1713161696513-c7d16809-effd-42c9-8fcb-efce8528b04a-20240423095822896.jpeg)
 多线程模型
 
 - InnoDB存储引擎采用多线程模型，其后台运行多个不同的后台线程，每个线程负责处理特定的任务。
@@ -19,13 +18,10 @@
 3.  **日志写入线程（log write thread）：** 将日志缓冲池中的日志写入磁盘上的日志文件，保证事务的持久性。 
 4.  **后台IO线程（background IO thread）：** 负责处理后台IO操作，如读取和写入数据文件等。 
 
-### 1.3.1 IO Thread
+## 1.1 IO Thread
 
 在InnoDB中，大量采用了异步IO（AIO）技术来进行读写处理，这一特性可以显著提高数据库的性能。通过异步IO，InnoDB能够在进行IO操作时不阻塞其他线程的执行，从而更高效地处理读写请求。
-
 IO线程配置
-
-
 
 在InnoDB 1.0版本之前，共有4个IO Thread，分别是：
 
@@ -35,8 +31,6 @@ IO线程配置
 - **log thread**：负责将日志缓冲区内容刷新到磁盘。
 
 而在后续版本中，read thread和write thread分别增大到了4个，总共有10个IO线程。
-
-
 
 要查看InnoDB的IO线程状态，可以使用MySQL的命令`show engine innodb status;`，该命令将显示当前InnoDB引擎的详细状态信息，包括IO线程的数量和状态等。
 
@@ -60,7 +54,7 @@ Pending flushes (fsync) log: 0; buffer pool: 0
 0.00 reads/s, 0 avg bytes/read, 0.12 writes/s, 0.12 fsyncs/s
 ```
 
-### 1.3.2 purge Thread
+## 1.2 purge Thread
 
 Thread事务提交之后，其使用的undo日志将不再需要，因此需要Purge Thread回收已经分配的undo页。
 
@@ -75,11 +69,9 @@ mysql> show variables like '%innodb_purge_threads%';
 1 row in set (0.01 sec)
 ```
 
-
-
 InnoDB1.2+开始，支持多个Purge Thread 这样做的目的为了加快回收undo页（释放内存）
 
-### 1.3.3 Page Clean Thread
+## 1.3 Page Clean Thread
 
 作用是将脏数据刷新到磁盘，脏数据刷盘后相应的redo log也就可以覆盖，即可以同步数据，又能达到redo log循环使用的目的。会调用write thread线程处理。
 
@@ -92,23 +84,22 @@ mysql> show variables like '%innodb_page_cleaners%';
 +----------------------+-------+
 ```
 
-### 1.3.4 Master Thread
+## 1.4 Master Thread
 
-#### 主要功能
+### 主要功能
 
 InnoDB的Master Thread是主线程，担负着调度其他各个线程的重要任务，其优先级最高。主要功能包括：
 
 - 异步刷新缓冲池中的数据到磁盘，以保证数据的一致性。
 - 调度各个线程执行特定的任务，包括脏页的刷新、undo页的回收、redo日志的刷新、合并写缓冲等。
 
-#### 操作频率及具体操作
+### 操作频率及具体操作
 
 ##### 每1秒的操作：
 
 1.  **刷新脏页数据到磁盘：** 
-
-- 根据脏页比例达到75%才执行刷新操作。
-- 刷新脏页的数量受到innodb_io_capacity参数的控制，该参数默认值为200。
+    - 根据脏页比例达到75%才执行刷新操作。
+    - 刷新脏页的数量受到innodb_io_capacity参数的控制，该参数默认值为200。
 
 示例输出： 
 
@@ -120,3 +111,4 @@ mysql> show variables like 'innodb_io_capacity';
 | innodb_io_capacity | 200   |
 +--------------------+-------+
 ```
+
